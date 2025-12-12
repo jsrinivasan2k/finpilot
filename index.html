@@ -44,19 +44,19 @@
                 CORE SKILLS
               </thead>
         <ol>
-            <tr><li>Murex Risk         :MRL, MLC, Simulation Views,VaR,StressTesting,BackTest<li></tr>
-            <tr><li>Liquidity Risk     :CashLadder,FXNOP,ProjectedCashFlows,ActualCashFlows,Mandates<li></tr>
-            <tr><li>Regulatory Risk    :SIMM, FRTB<li></tr>
-            <tr><li>Risk Aggregation   :MRA<li></tr>
+            <tr><li>Murex Risk         :MRL, MLC, Simulation Views,VaR,StressTesting,BackTest</li></tr>
+            <tr><li>Liquidity Risk     :CashLadder,FXNOP,ProjectedCashFlows,ActualCashFlows,Mandates</li></tr>
+            <tr><li>Regulatory Risk    :SIMM, FRTB</li></tr>
+            <tr><li>Risk Aggregation   :MRA</li></tr>
             <tr><li>Reporting          :Murex_Datamart,SQL,..</li></tr>
-            <tr><li>Market Data        :Murex_MarketData,InHouse,Bloomberg,Numerix_MarketData<li></tr>
-            <tr><li>Structured Product :OneView (Numerix),Murex_FO(beginner)<li></tr>            
-            <tr><li>Database           :Oracle, PostgreSQL<li></tr>            
-            <tr><li>Cloud              :AWS Cloud, Docker, Kubernetes (Basics)<li></tr>            
-            <tr><li>Incident,AppSupport:JIRA, Confluence, Bitbucket,JUnit<li></tr>                        
-            <tr><li>Java, J2EE, Unix, Spring, Python<li></tr>             
-            <tr><li>SWIFT Messaging <li></tr>
-            <tr><li>Agile Delivery, Stakeholder Management<li></tr>            
+            <tr><li>Market Data        :Murex_MarketData,InHouse,Bloomberg,Numerix_MarketData</li></tr>
+            <tr><li>Structured Product :OneView (Numerix),Murex_FO(beginner)</li></tr>            
+            <tr><li>Database           :Oracle, PostgreSQL</li></tr>            
+            <tr><li>Cloud              :AWS Cloud, Docker, Kubernetes (Basics)</li></tr>            
+            <tr><li>Incident,AppSupport:JIRA, Confluence, Bitbucket,JUnit</li></tr>                        
+            <tr><li>Java, J2EE, Unix, Spring, Python</li></tr>             
+            <tr><li>SWIFT Messaging </li></tr>
+            <tr><li>Agile Delivery, Stakeholder Management</li></tr>            
           </ol>
       </table>                
     </p>
@@ -79,19 +79,19 @@
             <br/>
             UOB Bank | Singapore</td><td>EDP/Channel Admin Delivery Lead (Payments) | Mar 2024 – Mar 2025
             <ul>              
-              <li>Led requirement analysis, design, and delivery for EDP/Channel Admin digital payment enhancements.</li>
-              <li>Fixed SIT/UAT defects and supported production issue resolution.</li>
-              <li>Prepared daily progress reports for PMO and business.</li>
-              <li>Reviewed feature/change requests and prepared functional design specifications.</li>
+              <li>Led requirementanalysis,design,delivery for EDP/Channel Admin digital payment enhancements.</li>
+              <li>Fixed SIT/UAT defects&supported production issue resolution.</li>
+              <li>Prepared daily progress reports for PMO & Business.</li>
+              <li>Reviewed feature/change requests & prepared functional design spec.</li>
             </ul>
             <br/>
             Murex Risk Consultant | Apr 2018 – Feb 2022
             <ul>
                <li>Delivered Risk Aggregation solutions and regulatory programs (SIMM, FRTB).</li>
-               <li>Hands-on expertise in MRA, MRL, MLC, DataMart, SimulationViewer, Static Data.</li>
-               <li>Built dynamic tables, feeders, extraction logic, and processing scripts in Datamart.</li>
+               <li>Hands-on expertise in MRA,MRL,MLC,DataMart,SimulationViewer,Static Data.</li>
+               <li>Built dynamic tables,feeders,extraction logic & processing scripts in Datamart.</li>
                <li>Used GOM/PortfolioTree, PS/Batch services to reuse risk reports for multiple entities.</li>
-               <li>Supported UAT/SIT, production deployment, and user coordination.</li>
+               <li>Supported UAT/SIT,production deployment,& user coordination.</li>
             </ul>
           </td>
           <td>Risk,Regulatory,Reporting,Analytics,Payments,MarketData</td>
@@ -101,9 +101,9 @@
           <td>Murex Risk Delivery Lead | Feb 2022 – Feb 2024
             <ul>
               <li>Led a team of 3 in delivering Risk Aggregation and SIMM/FRTB implementations.</li>
-            	<li>Analyzed MRE/MRA logs to identify failures and run batch splits to detect problematic trades.</li>
-              <li>Built and maintained Simulation Views for sensitivity calculations at trade and portfolio levels.</li>
-              <li>Drove sprint planning, daily stand-ups, reviews, and retrospectives.</li>
+            	<li>Analyzed MRE/MRA logs to identify failures & run batch splits to detect problematic trades.</li>
+              <li>Built and maintained Simulation Views for sensitivity calculations at trade & portfolio levels.</li>
+              <li>Drove sprint planning, daily stand-ups, reviews & retrospectives.</li>
               <li>Managed SIT/UAT cycles and ensured smooth go-live and post-production verification.</li>
             </ul>              
          </td>
@@ -161,17 +161,23 @@
     ]);
 
     const edges = new vis.DataSet([
-      { from: 1, to: 2  },
-      { from: 1, to: 3  },
-      { from: 1, to: 4  },
-      { from: 2, to: 5  },      
-      { from: 3, to: 6  },
-      { from: 3, to: 7  },
-      { from: 3, to: 8  },
-      { from: 3, to: 9  },
-      { from: 9, to: 10 },
-      { from: 4, to: 5  },
-      { from: 2, to: 12 }
+      { from:  1, to: 2  },
+      { from:  1, to: 3  },
+      { from:  1, to: 4  },
+      { from:  2, to: 5  },      
+      { from:  3, to: 6  },
+      { from:  3, to: 7  },
+      { from:  3, to: 8  },
+      { from:  3, to: 9  },
+      { from:  9, to: 10 },
+      { from:  4, to: 11 },
+      { from:  4, to: 12 },
+      { from:  2, to: 12 },
+      { from:  2, to: 11 },
+      { from: 11, to: 12 },
+      { from: 13, to: 3  },
+      { from: 13, to: 11 }
+      
     ]);
 
     const container = document.getElementById('networkGraph');
@@ -204,7 +210,47 @@
 
   </div>
 </div>
-
+ <section id="projects" class="section container">
+    <h2>Projects</h2>
+    <table class="table table-striped table-hover table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <td>CERTIFICATIONS</td>
+        </tr>
+      </thead>
+        <tr>
+          <td>Domain Certifications
+            <ul>              
+              <li>ERM: Risk Management Framework – SMU (2023)</li>
+              <li>FinTech: Innovation & Transformation – NUS Business School</li>
+              <li>Certified Financial Risk Management Professional – GARP (2021)</li>
+              <li>Contracts for Difference – ABS Singapore</li>
+              <li>Introduction to Trading & ML (NYIF, 2025)</li>
+              <li>Machine Learning in Trading & Finance – Google Cloud (2025)</li>
+              <li>MMFEPx: Probability Theory – Delft University (2024)</li>
+              <li>Reinforcement Learning – MathWorks (2025)</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Technical Certifications
+            <ul>              
+              <li>MMFEPx: Probability Theory – Delft University (2024)</li>
+              <li>Sun Certified Java Professional (2007)              </li>
+              <li>UML Professional – OMG USA (2007)                   </li>
+              <li>TOGAF 9 – Open Group (2020)                         </li>
+              <li>CSPO – Scrum Alliance (2020)                        </li>
+              <li>Master SQL for Data Science – LinkedIn (2025)       </li>
+              <li>NumPy & Matplotlib Training – LinkedIn (2022)       </li>
+              <li>AWS Cloud Essentials, Bedrock, Generative AI, Cloud Technical Essentials (2025)</li>
+              <li>Azure Cloud Fundamentals (2025)                     </li>
+              <li>Kubernetes Essentials – Linux Foundation (2025)     </li>
+              <li>Docker Essentials – IBM Cognitive Class (2025)      </li>
+            </ul>
+          </td>
+        </tr>
+  </table>
+  </section>         
 <footer>
     <h2>Contact</h2>
       <table>
@@ -240,6 +286,7 @@
   </script>
 </body>
 </html>
+
 
 
 
