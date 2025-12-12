@@ -39,6 +39,19 @@
       Delivery Lead & Technical Consultant with expertise in Java, Python, Spring, Oracle,
       Postgres, AWS Cloud, Docker, Market Risk, Credit Risk, Liquidity Risk, Murex, Datamart,
       VaR, Simulation, and Financial Engineering.
+      CORE SKILLS
+        •	Murex Risk: MRA, MRL, MLC, Simulation Views, Datamart, VaR, Stress Testing
+        •	Market & Liquidity Risk Management
+        •	Regulatory Risk: SIMM, FRTB
+        •	Risk Aggregation & Reporting
+        •	Market Data Management
+        •	Java, J2EE, Unix, Spring, Python
+        •	Oracle, PostgreSQL
+        •	AWS Cloud, Docker, Kubernetes (Basics)
+        •	JIRA, Confluence, Bitbucket, JUnit
+        •	SWIFT Messaging, OneView (Numerix)
+        •	Agile Delivery, Stakeholder Management
+        •	Incident & Application Support (L1/L2)
     </p>
   </section>
 
@@ -48,15 +61,39 @@
     <table class="table table-striped table-hover table-bordered">
       <thead class="table-dark">
         <tr>
-          <th>Project</th>
+          <th>Organization</th>
           <th>Description</th>
-          <th>Category</th>
+          <th>SkillSet</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>FinPilot</td><td>AI-driven analytics for market and risk modeling</td><td>Analytics</td></tr>
-        <tr><td>Risk Aggregation Engine</td><td>Computes enterprise-wide market, credit, and liquidity risks</td><td>Risk</td></tr>
-        <tr><td>Credit Exposure Simulator</td><td>Simulation engine for exposure and limit calculations</td><td>Credit</td></tr>
+        <tr><td>UOB Bank | Singapore</td><td>EDP/Channel Admin Delivery Lead (Payments) | Mar 2024 – Mar 2025
+•	Led requirement analysis, design, and delivery for EDP/Channel Admin digital payment enhancements.
+•	Fixed SIT/UAT defects and supported production issue resolution.
+•	Prepared daily progress reports for PMO and business.
+•	Reviewed feature/change requests and prepared functional design specifications.
+Murex Risk Consultant | Apr 2018 – Feb 2022
+•	Delivered Risk Aggregation solutions and regulatory programs (SIMM, FRTB).
+•	Hands-on expertise in MRA, MRL, MLC, DataMart, SimulationViewer, Static Data.
+•	Built dynamic tables, feeders, extraction logic, and processing scripts in Datamart.
+•	Used GOM/PortfolioTree, PS/Batch services to reuse risk reports for multiple entities.
+•	Supported UAT/SIT, production deployment, and user coordination.</td><td>Risk,Regulatory,Reporting,Analytics,Payments,MarketData</td></tr>
+        <tr><td>OCBC Bank | Singapore</td><td>Murex Risk Delivery Lead | Feb 2022 – Feb 2024
+•	Led a team of 3 in delivering Risk Aggregation and SIMM/FRTB implementations.
+•	Analyzed MRE/MRA logs to identify failures and run batch splits to detect problematic trades.
+•	Built and maintained Simulation Views for sensitivity calculations at trade and portfolio levels.
+•	Drove sprint planning, daily stand-ups, reviews, and retrospectives.
+•	Managed SIT/UAT cycles and ensured smooth go-live and post-production verification.
+</td><td>Risk</td>Risk,Regulatory,Reporting,Analytics,MarketData</tr>
+        <tr><td>DBS Bank (via Comtel Solutions & Mindtree) | Singapore</td><td>Senior Technical Consultant – Treasury (TMS) | Sep 2015 – Jul 2016
+•	Implemented Cash Management system using Smartstream TMS for Treasury.
+Senior Consultant (Market Risk – Murex) | Nov 2011 – Sep 2015
+•	Designed & developed Market Risk scenarios and integrated them into Murex Scenario Container.
+Consultant – SWIFT | Dec 2009 – Oct 2011
+•	Designed and upgraded the centralized matching & workflow engine for SWIFT.
+•	Supported accurate and timely matching of trade-related transaction data.
+</td><td>Liquidity,Risk,MarketData</td></tr>              
+
       </tbody>
     </table>
   </section>
@@ -70,20 +107,35 @@
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <script>
     const nodes = new vis.DataSet([
-      { id: 1, label: 'FinPilot' },
-      { id: 2, label: 'Risk Engine' },
-      { id: 3, label: 'Credit Model' },
-      { id: 4, label: 'FX Module' },
-      { id: 5, label: 'Analytics Core' }
+      { id:  1, label: 'Regulatory'         },
+      { id:  2, label: 'Risk'               },            
+      { id:  3, label: 'Reporting'          },
+      { id:  4, label: 'Analytics'          }
+      { id:  5, label: 'Payments'           },      
+      { id:  6, label: 'Murex_DataMart'     },
+      { id:  7, label: 'PostGresSQl'        },
+      { id:  8, label: 'SQL'                },
+      { id:  9, label: 'Databases'          },
+      { id: 10, label: 'LiquiBase'          },
+      { id: 11, label: 'PortfolioSimulation'},      
+      { id: 12, label: 'Numerix_Analytics'  },            
+      { id: 13, label: 'Liquidity'          },            
+      { id: 14, label: 'MarketData'         }                           
     ]);
 
     const edges = new vis.DataSet([
-      { from: 1, to: 2 },
-      { from: 1, to: 3 },
-      { from: 1, to: 4 },
-      { from: 2, to: 5 },
-      { from: 3, to: 5 },
-      { from: 4, to: 5 }
+      { from: 1, to: 2  },
+      { from: 1, to: 3  },
+      { from: 1, to: 4  },
+      { from: 2, to: 5  },
+      { from: 2, to: 5  },
+      { from: 3, to: 6  },
+      { from: 3, to: 7  },
+      { from: 3, to: 8  },
+      { from: 3, to: 9  },
+      { from: 9, to: 10 },
+      { from: 4, to: 5  },
+      { from: 2, to: 12 }
     ]);
 
     const container = document.getElementById('networkGraph');
@@ -152,4 +204,5 @@
   </script>
 </body>
 </html>
+
 
