@@ -1,29 +1,95 @@
-<html>
-<head>FinPilot</head>
-<body>FinPilot</body>
-<h1># Srinivasan Jayavel — Portfolio</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srinivasan Jayavel — Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { background: #f5f7fa; }
+    header { background: #0d6efd; color: white; padding: 2rem; text-align: center; }
+    nav a { margin-right: 1rem; }
+    .section { padding: 3rem 0; }
+    footer { margin-top: 3rem; padding: 2rem; background: #222; color: #fff; text-align:center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Srinivasan Jayavel</h1>
+    <p>Professional Portfolio</p>
+  </header>
 
-<h2>Welcome to my portfolio!</h2>
+  <nav class="p-3 bg-light text-center">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#graphs">Graph Visualization</a>
+    <a href="#table">Tables</a>
+  </nav>
 
-<h2>## 🚀 About Me</h2>
-<div>
-	Delivery Lead | Technical Consultant  
-	Java, Python, Spring, Oracle, AWS, Docker  
-	Market Risk, Credit Risk, Liquidity Risk  
-	Murex (MRAL, Datamart, VaR)
-</div>
----
+  <!-- About Section -->
+  <section id="about" class="section container">
+    <h2>About Me</h2>
+    <p>
+      Delivery Lead & Technical Consultant with expertise in Java, Python, Spring, Oracle,
+      Postgres, AWS Cloud, Docker, Market Risk, Credit Risk, Liquidity Risk, Murex, Datamart,
+      VaR, Simulation, and Financial Engineering.
+    </p>
+  </section>
 
-<h2>## 📘 Projects</h2>
+  <!-- Projects Section -->
+  <section id="projects" class="section container">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>FinPilot</strong> — AI-driven analytics for market and risk modeling.</li>
+      <li>Risk Aggregation Engine</li>
+      <li>Credit Exposure Simulator</li>
+    </ul>
+  </section>
 
-<div>
-<h3>### 🔹 FinPilot</h3>
-	AI-driven financial insights & risk analytics.[View on GitHub](../)
-</div>
----
+  <!-- Graph Visualization Section -->
+  <section id="graphs" class="section container">
+    <h2>Graph Visualization (Chart.js)</h2>
+    <canvas id="lineChart" height="120"></canvas>
+  </section>
 
-<h2>## 📫 Contact</h2>
-Email: your-email@example.com  
-LinkedIn: https://linkedin.com/in/yourprofile
+  <!-- Stylish Table Section -->
+  <section id="table" class="section container">
+    <h2>Good Looking Table</h2>
+    <table class="table table-striped table-hover table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th>Asset</th>
+          <th>Price</th>
+          <th>Volatility</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>EUR/USD</td><td>1.084</td><td>7.5%</td><td>FX</td></tr>
+        <tr><td>S&P 500</td><td>4820</td><td>12%</td><td>Equity</td></tr>
+        <tr><td>Gold</td><td>2050</td><td>5%</td><td>Commodity</td></tr>
+      </tbody>
+    </table>
+  </section>
 
+  <footer>
+    © 2025 Srinivasan Jayavel — Portfolio
+  </footer>
+
+  <script>
+    const ctx = document.getElementById('lineChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [{
+          label: 'Portfolio Performance',
+          data: [100, 105, 110, 108, 115, 120],
+          borderWidth: 2
+        }]
+      }
+    });
+  </script>
+</body>
 </html>
