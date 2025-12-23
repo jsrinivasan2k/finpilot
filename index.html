@@ -196,7 +196,10 @@
       { id: 16, label: 'Bloomberg'          },
       { id: 17, label: 'Murex(MDRS/MDCS)'   },
       { id: 18, label: 'SmartStream'        },
-      { id: 19, label: 'Limits'             }
+      { id: 19, label: 'Limits'             },
+      { id: 20, label: 'CreditRisk'         },
+      { id: 21, label: 'MarketRisk'         },
+      { id: 22, label: 'LiquiRisk'          }
     ]);
 
     const edges = new vis.DataSet([
@@ -207,16 +210,17 @@
       { from:  1, to: 13 },
       { from:  2, to: 11 },      
       { from:  2, to: 19 },            
+      { from:  2, to: 20 },     
+      { from:  2, to: 21 },     
+      { from:  2, to: 22 },     
       { from:  3, to: 6  },
       { from:  3, to: 7  },
       { from:  3, to: 8  },
       { from:  3, to: 9  },      
       { from:  4, to: 14 },
       { from:  9, to: 10 },                  
-      { from: 11, to: 4  },
-      { from: 12, to: 2  },
-      { from: 12, to: 5  },   
-      { from: 12, to: 14 },
+      { from: 11, to: 4  },      
+      { from: 12, to: 5  },         
       { from: 12, to: 15 },                
       { from: 13, to: 18 },      
       { from: 14, to: 16 },
@@ -324,6 +328,7 @@
   </script>
 </body>
 </html>
+
 
 
 
